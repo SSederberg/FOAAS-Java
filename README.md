@@ -1,7 +1,7 @@
 # JFOAAS
 A Java API for Fuck Off As A Service (FOAAS) - http://foaas.com/
 
-**Please note that this API is still indevelopment. Please contribute to help fix this problem faster!**
+**Please note that this API is still in development. Please contribute to help fix this problem faster!**
 
 ### TODO
 
