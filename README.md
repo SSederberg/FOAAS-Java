@@ -1,2 +1,2 @@
 # JFOAAS
-A Java FX GUI for Fuck Of As A Service (FOASS)
+A Java API for Fuck Off As A Service (FOAAS)
