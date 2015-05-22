@@ -24,7 +24,7 @@
 
 package me.AnUnknownMiner.JFOAAS;
 
-public enum Type {
+public enum Fuck {
 
 	OFF,
 	YOU,
@@ -39,5 +39,23 @@ public enum Type {
 	PINK,
 	LIFE,
 	CHAINSAW,
-	OUTSIDE
+	OUTSIDE,
+	THING,
+	THANKS,
+	FLYING,
+	FASCINATING,
+	MADISON,
+	COOL,
+	NUGGET,
+	YODA,
+	WHAT,
+	BECAUSE,
+	BYE,
+	DIABETES,
+	BUS,
+	XMAS,
+	AWESOME,
+	TUCKER,
+	BUCKET
+	
 }
