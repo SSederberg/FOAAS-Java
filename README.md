@@ -6,7 +6,7 @@ A Java API for Fuck Off As A Service (FOAAS) - http://foaas.com/
 ### TODO
 
 - [x] Add the (supported) rest of FOAAS to the API.
-- [ ] Add the rest of FOAAS to the API that isn't supported.
+- [x] Add the rest of FOAAS to the API that isn't supported.
 - [x] Allow users to decide if they want the link to open in their browser.
 
 ## Example
