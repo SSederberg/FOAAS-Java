@@ -25,7 +25,4 @@
 package me.AnUnknownMiner.JFOAAS;
 
 @Deprecated
-/**
- * This is now deprecated since
- */
 public enum Output { STRING, URL }
