@@ -26,36 +26,54 @@ package me.AnUnknownMiner.JFOAAS;
 
 public enum Fuck {
 
-	OFF,
-	YOU,
-	THIS,
-	THAT,
-	EVERYTHING,
-	EVERYONE,
-	DONUT,
-	SHAKESPEARE,
-	LINUS,
-	KING,
-	PINK,
-	LIFE,
-	CHAINSAW,
-	OUTSIDE,
-	THING,
-	THANKS,
-	FLYING,
-	FASCINATING,
-	MADISON,
-	COOL,
-	NUGGET,
-	YODA,
-	WHAT,
-	BECAUSE,
-	BYE,
-	DIABETES,
-	BUS,
-	XMAS,
-	AWESOME,
-	TUCKER,
-	BUCKET
-	
+	OFF("/off/:name/:from"),
+	YOU("/you/:name/:from"),
+	THIS("/this/:from"),
+	THAT("/that/:from"),
+	EVERYTHING("/everything/:from"),
+	EVERYONE("/everyone/:from"),
+	DONUT("/donut/:name/:from"),
+	SHAKESPEARE("/shakespeare/:name/:from"),
+	LINUS("/linus/:name/:from"),
+	KING("/king/:name/:from"),
+	PINK("/pink/:from"),
+	LIFE("life/:from"),
+	CHAINSAW("/chainsaw/:name/:from"),
+	OUTSIDE("/outside/:name/:from"),
+	THING("/:thing/:from"),
+	THANKS("/thanks/:from"),
+	FLYING("/flying/:from"),
+	FASCINATING("/fascinating/:from"),
+	MADISON("/madison/:name/:from"),
+	COOL("/cool/:from"),
+	FIELD("/field/:name/:from/:reference"),
+	NUGGET("/nugget/:name/:from"),
+	YODA("/yoda/:name/:from"),
+	WHAT("/what/:from"),
+	BECAUSE("/because/:from"),
+	BYE("/bye/:from"),
+	DIABETES("/diabetes/:from"),
+	BUS("/bus/:name/:from"),
+	XMAS("/xmas/:name/:from"),
+	AWESOME("/awesome/:from"),
+	TUCKER("tucker/:from"),
+	BUCKET("/bucket/:from"),
+	BALLMER("/ballmer/:name/:company/:from"),
+	CAN_I_USE("/caniuse/:tool/:from");
+
+	/**
+	 * The URL path representation
+	 */
+	private String path;
+
+	Fuck(String path) {
+		this.path = path;
+	}
+
+
+	public String getPath() {
+		return path;
+	}
+
+
 }

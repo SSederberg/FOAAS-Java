@@ -24,5 +24,21 @@
 
 package me.AnUnknownMiner.JFOAAS;
 
-@Deprecated
-public enum Output { STRING, URL }
+public enum  ResponseType {
+    PLAIN_TEXT("text/plain"),
+    JSON("application/json"),
+    // the default response
+    HTML("text/html"),
+    XML("application/xml");
+
+
+    private String acceptKey;
+
+    ResponseType(String acceptKey) {
+        this.acceptKey = acceptKey;
+    }
+
+    public String getAcceptKey() {
+        return acceptKey;
+    }
+}

@@ -24,16 +24,16 @@ import me.AnUnknownMiner.JFOAAS.Output;
 public class Example {
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
-		JFOAAS j = new JFOAAS();
+		JFOAAS j = new JFOAAS("From", "Name");
 		
-		String fuck = j.withFrom("From").withName("Name").withFuck(Fuck.DONUT).withOutput(Output.STRING).build();
+		String fuck = j.withFuck(Fuck.DONUT).build();
 		
 		System.out.println(fuck + "\n");
 		
 		// You can directly print without using a String!
-		System.out.println(j.withFrom("From11").withName("Name11").withFuck(Fuck.DIABETES).withOutput(Output.STRING).build());
+		System.out.println(j.withFrom("From11").withName("Name11").withFuck(Fuck.DIABETES).build());
 		
-		String uri = j.withFrom("FromURI").withName("NameURI").withFuck(Fuck.SHAKESPEARE).withOutput(Output.URL).build();
+		String uri = j.url();
 		
 		// Opens the default browser to the URI.
 		if(Desktop.isDesktopSupported()) Desktop.getDesktop().browse(new URI(uri));
