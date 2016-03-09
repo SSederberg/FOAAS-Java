@@ -1,13 +1,7 @@
 # JFOAAS
 A Java API for Fuck Off As A Service (FOAAS) - http://foaas.com/ - [Link to Github Repo](https://github.com/tomdionysus/foaas)
 
-**Please note that this API is still in development. Please contribute to help fix this problem faster!**
-
-### TODO
-
-- [x] Add the (supported) rest of FOAAS to the API.
-- [x] Add the rest of FOAAS to the API that isn't supported.
-- [x] Allow users to decide if they want the link to open in their browser.
+**Please note that this API tends to lag behind on updates. Feel free to subhmit a pull request to fix my lazyness*
 
 ## Example
 
