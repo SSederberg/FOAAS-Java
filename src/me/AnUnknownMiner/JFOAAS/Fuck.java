@@ -1,7 +1,7 @@
 /**
 *The MIT License (MIT)
 *
-*Copyright (c) 2015 Spencer Sederberg
+*Copyright (c) 2016 Spencer Sederberg
 *
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 *of this software and associated documentation files (the "Software"), to deal
@@ -59,7 +59,28 @@ public enum Fuck {
 	TUCKER("tucker/:from"),
 	BUCKET("/bucket/:from"),
 	BALLMER("/ballmer/:name/:company/:from"),
-	CAN_I_USE("/caniuse/:tool/:from");
+	CAN_I_USE("/caniuse/:tool/:from"),
+	B_DAY("/bday/:name/:from"),
+	KEEP_CALM("/keepcalm/:reaction/:from"),
+	MORNIN("/mornin/:from"),
+	GREED("/greed/:noun/:from"),
+	BM("/bm/:name/:from"),
+	GFY("/gfy/:name/:from"),
+	ME("/me/:from"),
+	BACK("/back/:name/:from"),
+	THINK("/think/:name/:from"),
+	KEEP("/keep/:name/:from"),
+	SINGLE("/single/:from"),
+	LOOK("/look/:name/:from"),
+	LOOKING("/looking/:from"),
+	NO("/no/:from"),
+	GIVE("/give/:from"),
+	ZERO("/zero/:from"),
+	PULP("/pulp/:language/:from"),
+	SAKE("/sake/:from"),
+	ANYWAY("/anyway/:company/:from"),
+	RETARD("/retard/:from");
+	
 
 	/**
 	 * The URL path representation

@@ -1,18 +1,18 @@
 /**
  * The MIT License (MIT)
- * <p/>
- * Copyright (c) 2015 Spencer Sederberg
- * <p/>
+ * 
+ * Copyright (c) 2016 Spencer Sederberg
+ * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * <p/>
+ * 
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * <p/>
+ * 
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -31,7 +31,7 @@ public class JFOAAS {
     private Fuck fuck = Fuck.OFF;
     private Output output = Output.STRING;
     private String url = "http://www.foaas.com";
-    private String name, from, reference = "", tool = "", company = "";
+    private String name, from, reference = "", tool = "", company = "", noun = "", language = "";
     private ResponseType responseType = ResponseType.PLAIN_TEXT;
 
     public JFOAAS() {
@@ -121,15 +121,40 @@ public class JFOAAS {
     }
 
     /**
-     * Used solely for Fuck.BALLMER
-     * @param company - the company you will kill
+     * Used solely for Fuck.BALLMER and Fuck.ANYWAY
+     * @param company - The company you will kill
      * @return The instance of this class
      */
     public JFOAAS withCompany(String company) {
         this.company = company;
         return this;
     }
+    
+    /**
+     * Used solely for Fuck.GREED
+     * @param noun - A fucking noun
+     * @return The instance of this class
+     */
+    public JFOAAS withNoun(String noun) {
+    	this.noun = noun;
+    	return this;
+    }
+    
+    /**
+     * Used solely for Fuck.PULP
+     * @param language - The kind of language you want.
+     * @return The instance of this class
+     */
+    public JFOAAS withLanguage(String language) {
+    	this.language = language;
+		return this;
+    }
 
+    /**
+     * Determines what kind of output you want.
+     * @param output - The kind of output.
+     * @return The instance of this class.
+     */
     @Deprecated
     public JFOAAS withOutput(Output output) {
         this.output = output;
@@ -146,7 +171,9 @@ public class JFOAAS {
                 .replace(":from", from)
                 .replace(":company", company)
                 .replace(":reference", reference)
-                .replace(":tool", tool);
+                .replace(":tool", tool)
+                .replace(":language", language)
+                .replace(":noun", noun);
     }
 
 
