@@ -79,7 +79,10 @@ public enum Fuck {
 	PULP("/pulp/:language/:from"),
 	SAKE("/sake/:from"),
 	ANYWAY("/anyway/:company/:from"),
-	RETARD("/retard/:from");
+	RETARD("/retard/:from"),
+	ING("/ing/:name/:from/"),
+	MAYBE("/maybe/:from"),
+	THINKING("/thinking/:name/:from/");
 	
 
 	/**
