@@ -31,7 +31,7 @@ public class JFOAAS {
     private Fuck fuck = Fuck.OFF;
     private Output output = Output.STRING;
     private String url = "http://www.foaas.com";
-    private String name, from, reference = "", tool = "", company = "", noun = "", language = "";
+    private String name, from, reference = "", tool = "", company = "", noun = "", language = "", thing = "";
     private ResponseType responseType = ResponseType.PLAIN_TEXT;
 
     public JFOAAS() {
@@ -149,6 +149,17 @@ public class JFOAAS {
     	this.language = language;
 		return this;
     }
+    
+    /**
+     * Used solely for Fuck.THING
+     * @param thing - The thing you fucking hate, like cancer and
+     * pineapples, fuck them!
+     * @return The instance of this class
+     */
+    public JFOAAS withThing(String thing) {
+    	this.thing = thing;
+    	return this;
+    }
 
     /**
      * Determines what kind of output you want.
@@ -173,7 +184,8 @@ public class JFOAAS {
                 .replace(":reference", reference)
                 .replace(":tool", tool)
                 .replace(":language", language)
-                .replace(":noun", noun);
+                .replace(":noun", noun)
+                .replace(":thing", thing);
     }
 
 
