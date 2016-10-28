@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package me.AnUnknownMiner.JFOAAS;
+package me.spencersederberg.jfoaas;
 
 import java.net.MalformedURLException;
 
@@ -31,7 +31,7 @@ public class JFOAAS {
     private Fuck fuck = Fuck.OFF;
     private Output output = Output.STRING;
     private String url = "http://www.foaas.com";
-    private String name, from, reference = "", tool = "", company = "", noun = "", language = "", thing = "";
+    private String name, from, reference = "", tool = "", company = "", noun = "", language = "", thing = "", reaction = "";
     private ResponseType responseType = ResponseType.PLAIN_TEXT;
 
     public JFOAAS() {
@@ -160,6 +160,11 @@ public class JFOAAS {
     	this.thing = thing;
     	return this;
     }
+    
+    public JFOAAS withReaction(String reaction) {
+    	this.reaction = reaction;
+    	return this;
+    }
 
     /**
      * Determines what kind of output you want.
@@ -185,7 +190,8 @@ public class JFOAAS {
                 .replace(":tool", tool)
                 .replace(":language", language)
                 .replace(":noun", noun)
-                .replace(":thing", thing);
+                .replace(":thing", thing)
+                .replace(":reaction", reaction);
     }
 
 

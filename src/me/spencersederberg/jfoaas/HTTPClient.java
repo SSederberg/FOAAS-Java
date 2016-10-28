@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package me.AnUnknownMiner.JFOAAS;
+package me.spencersederberg.jfoaas;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
