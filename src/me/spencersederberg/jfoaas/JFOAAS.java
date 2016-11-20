@@ -216,9 +216,9 @@ public class JFOAAS {
                 .replace(":noun", noun)
                 .replace(":thing", thing)
                 .replace(":reaction", reaction)
-        		.replace(":behavior", behavior)
-        		.replace(":do", _do)
-        		.replace(":something", something);
+        	.replace(":behavior", behavior)
+        	.replace(":do", _do)
+        	.replace(":something", something);
     }
 
 
