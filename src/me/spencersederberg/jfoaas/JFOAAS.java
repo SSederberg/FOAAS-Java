@@ -30,9 +30,11 @@ public class JFOAAS {
 
     private Fuck fuck = Fuck.OFF;
     private Output output = Output.STRING;
-    private String url = "http://www.foaas.com";
-    private String name, from, reference = "", tool = "", company = "", noun = "", language = "", thing = "", reaction = "";
-    private ResponseType responseType = ResponseType.PLAIN_TEXT;
+	private String url = "http://www.foaas.com";
+	private String name, from, reference = "", tool = "", company = "",
+			noun = "", language = "", thing = "", reaction = "", behavior = "",
+			_do = "", something = "";
+	private ResponseType responseType = ResponseType.PLAIN_TEXT;
 
     public JFOAAS() {
         this("", "");
@@ -165,6 +167,28 @@ public class JFOAAS {
     	this.reaction = reaction;
     	return this;
     }
+    
+    /**
+     * Used solely for FUCK.OFF_WITH
+     * @param behavior - Fuck off with sofa.
+     * @return The instance of this class
+     */
+    public JFOAAS withBehavior(String behavior) {
+    	this.behavior = behavior;
+    	return this;
+    }
+    
+    /**
+     * Used solely for FUCK.DOSOMETHING
+     * @param _do - The kind of action that you want to perform.
+     * @param something - The thing that your action is performed on.
+     * @return The instance of this class
+     */
+    public JFOAAS withDosomething(String _do, String something) {
+    	this._do = _do;
+    	this.something = something;
+    	return this;
+    }
 
     /**
      * Determines what kind of output you want.
@@ -191,7 +215,10 @@ public class JFOAAS {
                 .replace(":language", language)
                 .replace(":noun", noun)
                 .replace(":thing", thing)
-                .replace(":reaction", reaction);
+                .replace(":reaction", reaction)
+        		.replace(":behavior", behavior)
+        		.replace(":do", _do)
+        		.replace(":something", something);
     }
 
 
