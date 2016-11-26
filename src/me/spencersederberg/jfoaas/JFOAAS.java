@@ -32,8 +32,8 @@ public class JFOAAS {
     private Output output = Output.STRING;
 	private String url = "http://www.foaas.com";
 	private String name, from, reference = "", tool = "", company = "",
-			noun = "", language = "", thing = "", reaction = "", behavior = "",
-			_do = "", something = "";
+			noun = "", language = "", thing = "", reaction = "", 
+			behavior = "", _do = "", something = "";
 	private ResponseType responseType = ResponseType.PLAIN_TEXT;
 
     public JFOAAS() {
@@ -170,7 +170,7 @@ public class JFOAAS {
     
     /**
      * Used solely for FUCK.OFF_WITH
-     * @param behavior - Fuck off with sofa.
+     * @param behavior - The behavior being told to fuck off.
      * @return The instance of this class
      */
     public JFOAAS withBehavior(String behavior) {
