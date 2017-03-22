@@ -25,9 +25,9 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import me.AnUnknownMiner.JFOAAS.Fuck;
-import me.AnUnknownMiner.JFOAAS.JFOAAS;
-import me.AnUnknownMiner.JFOAAS.Output;
+import me.ssederberg.jfoaas.Fuck;
+import me.ssederberg.jfoaas.JFOAAS;
+import me.ssederberg.jfoaas.Output;
 
 public class Example {
 
