@@ -1,4 +1,4 @@
-# JFOAAS [![Build Status](https://travis-ci.org/SSederberg/FOAAS-Java.svg?branch=master)](https://travis-ci.org/SSederberg/FOAAS-Java) [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+# JFOAAS [![Build Status](https://travis-ci.org/SSederberg/FOAAS-Java.svg?branch=master)](https://travis-ci.org/SSederberg/FOAAS-Java)  [![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 A Java API for Fuck Off As A Service (FOAAS) - http://foaas.com/ - [Link to Github Repo](https://github.com/tomdionysus/foaas)
 
 ## Getting Started
