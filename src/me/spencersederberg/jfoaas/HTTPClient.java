@@ -58,24 +58,21 @@ public class HTTPClient {
 
     public Future<String> makeGet() {
         try {
-            result = new FutureTask<>(new Callable<String>() {
-                @Override
-                public String call() throws Exception {
-                    StringBuilder result = new StringBuilder();
+            result = new FutureTask<>(() -> {
+                StringBuilder result = new StringBuilder();
 
-                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                    // Make a get request
-                    connection.setRequestMethod("GET");
-                    // Set the user agent and the Accept value
-                    connection.addRequestProperty("User-Agent", "Mozilla/5.0");
-                    connection.addRequestProperty("Accept", responseType.getAcceptKey());
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                    String l;
-                    while ((l = reader.readLine()) != null) {
-                        result.append(l).append('\n');
-                    }
-                    return result.toString();
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                // Make a get request
+                connection.setRequestMethod("GET");
+                // Set the user agent and the Accept value
+                connection.addRequestProperty("User-Agent", "Mozilla/5.0");
+                connection.addRequestProperty("Accept", responseType.getAcceptKey());
+                BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                String l;
+                while ((l = reader.readLine()) != null) {
+                    result.append(l).append('\n');
                 }
+                return result.toString();
             });
             result.run();
         } catch (Exception ex) {
